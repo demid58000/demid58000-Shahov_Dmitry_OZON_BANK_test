@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ProgressBar</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+</head>
+<body>
+    
+    <div class="progress-widget form" id="progress">
+        <p>Progress</p>
+
+        <div class="form-bar" id="bar"></div>
+
+        <form class="form-layout">
+            <div class="form-layout__item">
+                <p>Value</p>
+                <input id="value" class="form-layout__input" type="text" autofocus>
+                <div>
+                    <label for="value"><i></i></label>
+                </div>
+            </div>
+            <div class="form-layout__item">
+                <p>Animate</p>
+                <input type="checkbox" id="toggle_animate">
+                <div class="form-layout__item-toggle">
+                    <label for="toggle_animate"><i></i></label>
+                </div>
+            </div>
+            <div class="form-layout__item">
+                <p>Hide</p>
+                <input type="checkbox" id="toggle_hide" onclick="hideProgress()">
+                <div class="form-layout__item-toggle">
+                    <label for="toggle_hide"><i></i></label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
